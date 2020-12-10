@@ -1,6 +1,6 @@
-type ExampleEntity @entity {
+type transfer @entity {
   id: ID!
-  count: BigInt!
-  _to: Bytes! # address
-  _value: BigInt! # uint256
+  send_Address: String
+  receive_Address: String
+  amount: BigInt!
 }
